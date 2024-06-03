@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nadia-site/static/css/main.62bbd6b0.css",
+    "main.js": "/nadia-site/static/js/main.b16663bd.js",
+    "index.html": "/nadia-site/index.html",
+    "main.62bbd6b0.css.map": "/nadia-site/static/css/main.62bbd6b0.css.map",
+    "main.b16663bd.js.map": "/nadia-site/static/js/main.b16663bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62bbd6b0.css",
+    "static/js/main.b16663bd.js"
+  ]
+}
