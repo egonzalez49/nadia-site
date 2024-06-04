@@ -1,16 +1,32 @@
-import './App.css';
+import * as React from 'react';
+import { Stack } from '@mui/material';
+
 import Footer from './components/Footer';
-import FullScreenDialog from './components/FullScreenDialog';
+import PasswordForm from './components/PasswordForm';
+import './App.css';
 
 function App() {
+  const [hidden, setHidden] = React.useState(true);
+
+  const onClose = () => {
+    setHidden(false);
+  };
+
   return (
-    <div className="app">
-      <FullScreenDialog />
-      <main>
-        <p>Lorem ipsum...</p>
-      </main>
-      <Footer />
-    </div>
+    <React.Fragment>
+      <PasswordForm onClose={onClose} />
+      <Stack
+        className="app"
+        textAlign="center"
+        minHeight="100vh"
+        sx={{ opacity: hidden ? 0 : 1 }}
+      >
+        <main>
+          <p>Lorem ipsum...</p>
+        </main>
+        <Footer />
+      </Stack>
+    </React.Fragment>
   );
 }
 
