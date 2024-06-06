@@ -62,7 +62,7 @@ function PasswordForm({ onClose }) {
                 type="password"
                 error={errorMessage.length}
                 sx={{ input: { textAlign: 'center' } }}
-                placeholder="Hint: It's spanish and 4 letters."
+                placeholder="Hint: It's Spanish and 4 letters."
                 helperText={errorMessage}
               />
               <Button variant="outlined" type="submit">

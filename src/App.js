@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Stack } from '@mui/material';
+import { Grid, Stack } from '@mui/material';
 
 import Footer from './components/Footer';
 import PasswordForm from './components/PasswordForm';
-import './App.css';
 
 function App() {
   const [hidden, setHidden] = React.useState(true);
@@ -21,9 +20,18 @@ function App() {
         minHeight="100vh"
         sx={{ opacity: hidden ? 0 : 1 }}
       >
-        <main>
-          <p>Lorem ipsum...</p>
-        </main>
+        <Grid
+          container
+          alignItems="center"
+          justifyContent="center"
+          sx={{ flex: 1 }}
+        >
+          <img
+            src="https://media.tenor.com/AL4ZMzBLtvgAAAAi/aww-cute.gif"
+            alt="cute bear love you gif"
+            style={{ marginLeft: '-3.2em' }}
+          />
+        </Grid>
         <Footer />
       </Stack>
     </React.Fragment>
